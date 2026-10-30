@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Launcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fullscreen Launcher Window Frame -->
+  <div class="launcher-window">
+
+    <!-- Main Application Body -->
+    <div class="launcher-body">
+
+      <!-- Left Sidebar -->
+      <aside class="sidebar">
+        <div class="top-sidebar">
+          <!-- User Profile Header -->
+          <div class="profile-section">
+            <div class="avatar-placeholder">
+              <img src="images/pfp.png" alt="85x85 img" class="avatar-img">
+            </div>
+            <div class="user-info">
+              <span class="username">Pato1_</span>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+          </div>
+
+          <!-- Navigation Links -->
+          <nav class="sidebar-nav">
+            <a href="#" class="sidebar-item" onclick="return false;">News</a>
+            <a href="#" class="sidebar-item active" onclick="return false;">MINECRAFT: Java Edition</a>
+            <a href="#" class="sidebar-item" onclick="return false;">MINECRAFT Dungeons</a>
+          </nav>
+        </div>
+
+        <div class="bottom-sidebar">
+          <a href="#" class="sidebar-item" onclick="return false;">Settings</a>
+        </div>
+      </aside>
+
+      <!-- Right Main Content Area -->
+      <main class="main-content">
+
+        <!-- Top Header & Section Tabs -->
+        <header class="content-header">
+          <div class="edition-heading">MINECRAFT: JAVA EDITION</div>
+          <nav class="top-nav">
+            <button class="top-nav-btn active" disabled>Play</button>
+            <button class="top-nav-btn" disabled>Installations</button>
+            <button class="top-nav-btn" disabled>Skins</button>
+            <button class="top-nav-btn" disabled>Patch Notes</button>
+          </nav>
+          <div class="top-middle-notice">I-click ang play button upang magsimula</div>
+        </header>
+
+        <!-- Main Hero Banner Area -->
+        <div class="hero-container">
+          <div class="hero-banner">
+            <img src="images/startimg.jpg" alt="Hero Banner Img" class="hero-img">
+          </div>
+
+          <!-- Bottom Control Bar (Forge profile + Play Button) -->
+          <div class="control-bar">
+            <!-- Forge Profile Selector -->
+            <div class="profile-selector">
+              <span class="forge-icon">▲</span>
+              <div class="forge-details">
+                <span class="forge-name">Made by Johan :)</span>
+                <span class="forge-version">1.21.1 smth smth</span>
+              </div>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <!-- Green Play Button (Links to game.html) -->
+            <a href="game.html" class="play-button">
+              <img src="images/playbutton.png" alt="160x33 img" class="play-btn-img">
+            </a>
+
+            <!-- Right Spacer -->
+            <div class="control-bar-right-spacer"></div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

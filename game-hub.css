@@ -1,0 +1,120 @@
+/* Game Hub Specific Layout matching your hand-drawn sketch & launcher style */
+body.hub-page-body {
+    background-color: #0d0f14;
+    /* Add these lines to set your background image: */
+    background-image: url('images/backg.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    color: #e2e8f0;
+    overflow-y: auto !important;
+    height: auto !important;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.scrollable-hub-container {
+    position: relative;
+    z-index: 20;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.back-to-home-btn-static {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    width: fit-content;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.back-to-home-btn-static:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.03);
+}
+
+.hub-main-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+}
+
+/* Universal Card & Row Styling matching launcher dark theme */
+.hub-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.hub-row-triple {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.hub-row-triple .image-card {
+    flex: 1;
+}
+
+.hub-row-triple .text-card {
+    flex: 2;
+}
+
+.hub-card {
+    background: rgba(33, 33, 33, 0.85); /* Matches launcher #212121 dark box tone */
+    border: 1px solid #424242;
+    backdrop-filter: blur(12px);
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.text-card h3, .full-width-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.text-card p, .full-width-card p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.image-card {
+    min-height: 120px;
+    background-color: #1a1a1a;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hub-img-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 120px;
+}
+
+.full-width-card {
+    width: 100%;
+    min-height: 100px;
+}

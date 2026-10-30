@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background-color: #121212;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fullscreen Launcher Window Styling */
+.launcher-window {
+  width: 100vw;
+  height: 100vh;
+  background-color: #313131;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Main Body Layout */
+.launcher-body {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 16px;
+  border-right: 1px solid #1a1a1a;
+  flex-shrink: 0;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  background-color: #313131;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 600;
+  color: #dddddd;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  color: #888888;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #bbbbbb;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.sidebar-item.active {
+  background-color: #383838;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  background-color: #313131;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 28px;
+  height: 100%;
+}
+
+/* Header & Tabs */
+.content-header {
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.edition-heading {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #aaaaaa;
+  margin-bottom: 10px;
+}
+
+.top-nav {
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid #424242;
+  padding-bottom: 8px;
+}
+
+.top-middle-notice {
+  font-size: 20px;
+  color: #2ecc71;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.top-nav-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaaaaa;
+  cursor: default;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.top-nav-btn.active {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.top-nav-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  min-height: 0;
+}
+
+.hero-banner {
+  flex: 1;
+  background-color: #1a1a1a;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Control Bar (Forge Selector + Play Button) */
+.control-bar {
+  height: 70px;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-top: 1px solid #2d2d2d;
+  flex-shrink: 0;
+}
+
+.profile-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #181818;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  width: 250px;
+  cursor: pointer;
+}
+
+.forge-icon {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.forge-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.forge-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.forge-version {
+  font-size: 11px;
+  color: #888888;
+}
+
+.play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.play-btn-img {
+  width: 240px;
+  height: 48px;
+  object-fit: contain;
+  background-color: #2ece68;
+  border-radius: 4px;
+  border: none;
+}
+
+.control-bar-right-spacer {
+  width: 150px;
+}
